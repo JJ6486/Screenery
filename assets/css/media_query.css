@@ -1,9 +1,10 @@
 /* responsive for 1200px */
 
-@media screen and (max-width: 120px) {
+@media screen and (max-width: 1200px) {
     :root {
         /* spacing */
-        --px: 80px;
+        --px: 80px; 
+        /* left and right padding */
     }
 
     /* header responsive */
@@ -109,5 +110,102 @@
         margin-right: 100px;
         padding-top: 5px;
     }
+
+    /* banner section responsive */
+
+    .banner {margin-top: 100px;}
+
+    .banner-card .card-title {font-size: 2.5em;}
+
+
+    /* category section responsive */
+
+    .category-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
+
+    /* footer section responsive */
+
+    .footer-content {flex-direction: column;}
+
+    .footer-brand {
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .footer-links {grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));}
+
+
+}
+
+/* responsive for 1024 px */
+
+@media screen and (max-width: 1024px) {
+    :root {
+        /* spacing */
+        --px: 60px;
+    }
+
+    /* banner section responsive */
+
+    .banner-card .card-content {
+        bottom: 40px;
+        left: 60px;
+        right: 60px;
+    }
+}
+
+/* responsive for 768px */
+
+@media screen and (max-width: 768px) {
+
+    :root {
+        /* spacing */
+        --px: 40px;
+    }
+
+    /* banner section */
+
+    .banner{display: none;}
+
+    /* movie section */
+
+    .movies { margin-top: 120px;}
+
+    /* filter bar responsive */
+    .filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-bar select {margin-bottom: 20px;}
+
+    .filter-radios {width: 100%;}
+
+
+    
+}
+
+/* responsive for 575px */
+
+@media screen and (max-width: 575px) {
+    :root {
+        --px: 20px;
+
+        /* typography */
+
+        --section-heading: 32px;
+        --fs-lg: 20px;
+    }
+
+    .navbar-search-btn {margin-right: 20px;}
+
+    .navbar-form-search {margin-right: 20px;}
+
+    .navbar-form-btn {right: 55px;}
+
+    /* footer section responsive */
+
+    .footer-copyright {flex-direction: column-reverse;}
+
+    .wrapper {margin-bottom: 20px;}
 
 }
